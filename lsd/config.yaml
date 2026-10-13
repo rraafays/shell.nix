@@ -1,21 +1,21 @@
 icons:
-  when: never
+    when: never
 
 color:
-  when: always
-  theme: custom
+    when: always
+    theme: custom
 
 blocks:
-  - permission
-  - user
-  - group
-  - size
-  - date
-  - name
+    - permission
+    - user
+    - group
+    - size
+    - date
+    - name
 
 date: date
 
 sorting:
-  column: name
-  reverse: false
-  dir-grouping: none
+    column: name
+    reverse: false
+    dir-grouping: none
