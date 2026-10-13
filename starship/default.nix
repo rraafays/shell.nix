@@ -16,20 +16,9 @@ in
     ./languages.toml
     ./user.toml
   ];
-  userSsh = merge [
-    ./base.toml
-    ./languages.toml
-    ./ssh-user.toml
-  ];
   root = merge [
     ./base.toml
     ./languages.toml
     ./root.toml
-  ];
-  rootSsh = merge [
-    ./base.toml
-    ./languages.toml
-    ./root.toml
-    ./ssh-root.toml
   ];
 }

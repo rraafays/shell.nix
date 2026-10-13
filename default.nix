@@ -26,9 +26,6 @@ in
     home.file.".config/lsd/config.yaml".source = ./lsd/config.yaml;
     home.file.".config/lsd/colors.yaml".source = ./lsd/colors.yaml;
     home.file.".config/starship.toml".source = starshipConfigs.user;
-    home.file.".config/starship-ssh.toml".source = starshipConfigs.userSsh;
-    home.file.".config/fish/conf.d/00-starship-ssh-config.fish".source =
-      ./fish/00-starship-ssh-config.fish;
     home.file.".config/fish/conf.d/40-pager-colors.fish".source = ./fish/40-pager-colors.fish;
     home.file.".config/fish/conf.d/42-vi-selection-reverse.fish".source =
       ./fish/42-vi-selection-reverse.fish;
@@ -83,9 +80,6 @@ in
   home-manager.users.root = {
     home.stateVersion = config.common.home.stateVersion;
     home.file.".config/starship.toml".source = starshipConfigs.root;
-    home.file.".config/starship-ssh.toml".source = starshipConfigs.rootSsh;
-    home.file.".config/fish/conf.d/00-starship-ssh-config.fish".source =
-      ./fish/00-starship-ssh-config.fish;
     programs = {
       fish = {
         enable = true;
