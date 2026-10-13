@@ -4,7 +4,7 @@ if status is-interactive
         if set -q XDG_CONFIG_HOME
             set config_home $XDG_CONFIG_HOME
         end
-        set -l ssh_config (path join $config_home starship-ssh.toml)
+        set -l ssh_config "$config_home/starship-ssh.toml"
         if test -f $ssh_config
             set -gx STARSHIP_CONFIG $ssh_config
         end
