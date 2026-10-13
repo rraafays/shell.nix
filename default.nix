@@ -27,6 +27,7 @@ in
     home.file.".config/lsd/colors.yaml".source = ./lsd/colors.yaml;
     home.file.".config/starship.toml".source = starshipConfigs.user;
     home.file.".config/fish/conf.d/40-pager-colors.fish".source = ./fish/40-pager-colors.fish;
+    home.file.".config/fish/conf.d/43-cursor-blink.fish".source = ./fish/43-cursor-blink.fish;
     home.file.".config/fish/conf.d/45-git-path-complete.fish".source = ./fish/git-path-complete.fish;
     home.file.".config/fish/conf.d/50-git-gh-short.fish".text = gitGhShort.loader;
     home.file.".config/fish/git-gh-short-defs.inc".text = gitGhShort.defs;
