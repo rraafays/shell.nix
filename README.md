@@ -7,4 +7,4 @@ Fish login shell, starship, lsd, zoxide, direnv, and git/gh fish shortcuts for `
 
 Requires `./common`. Importer must define `users.users.<common.username>` (e.g. `isNormalUser`); this module sets that user’s `shell`.
 
-Subpaths: `fish/`, `lsd/`, `starship/`.
+Subpaths: `fish/`, `lsd/`, `starship/`. Local vs SSH starship: `starship.toml` / `starship-ssh.toml` (yellow `user@host`, colon `fg:8`), selected when `SSH_CONNECTION` or `SSH_CLIENT` is set.

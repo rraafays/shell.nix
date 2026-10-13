@@ -26,8 +26,12 @@ in
     home.file.".config/lsd/config.yaml".source = ./lsd/config.yaml;
     home.file.".config/lsd/colors.yaml".source = ./lsd/colors.yaml;
     home.file.".config/starship.toml".source = starshipConfigs.user;
+    home.file.".config/starship-ssh.toml".source = starshipConfigs.userSsh;
+    home.file.".config/fish/conf.d/41-starship-ssh-config.fish".source =
+      ./fish/41-starship-ssh-config.fish;
     home.file.".config/fish/conf.d/40-pager-colors.fish".source = ./fish/40-pager-colors.fish;
-    home.file.".config/fish/conf.d/42-vi-selection-reverse.fish".source = ./fish/42-vi-selection-reverse.fish;
+    home.file.".config/fish/conf.d/42-vi-selection-reverse.fish".source =
+      ./fish/42-vi-selection-reverse.fish;
     home.file.".config/fish/conf.d/43-cursor-blink.fish".source = ./fish/43-cursor-blink.fish;
     home.file.".config/fish/conf.d/45-git-path-complete.fish".source = ./fish/git-path-complete.fish;
     home.file.".config/fish/conf.d/50-git-gh-short.fish".text = gitGhShort.loader;
@@ -79,6 +83,9 @@ in
   home-manager.users.root = {
     home.stateVersion = config.common.home.stateVersion;
     home.file.".config/starship.toml".source = starshipConfigs.root;
+    home.file.".config/starship-ssh.toml".source = starshipConfigs.rootSsh;
+    home.file.".config/fish/conf.d/41-starship-ssh-config.fish".source =
+      ./fish/41-starship-ssh-config.fish;
     programs = {
       fish = {
         enable = true;
