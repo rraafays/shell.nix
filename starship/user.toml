@@ -5,8 +5,8 @@ show_always = true
 disabled = false
 
 [hostname]
-ssh_only = false
-format = "[@]($style)[$hostname ]($style)"
+ssh_only = true
+format = "[@]($style)[$hostname]($style)"
 style = "bold fg:10"
 disabled = false
 
