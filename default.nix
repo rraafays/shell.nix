@@ -31,7 +31,6 @@ in
       ./fish/42-vi-selection-reverse.fish;
     home.file.".config/fish/conf.d/43-cursor-blink.fish".source = ./fish/43-cursor-blink.fish;
     home.file.".config/fish/conf.d/45-git-path-complete.fish".source = ./fish/git-path-complete.fish;
-    home.file.".config/fish/conf.d/46-colon-remote.fish".source = ./fish/46-colon-remote.fish;
     home.file.".config/fish/conf.d/50-git-gh-short.fish".text = gitGhShort.loader;
     home.file.".config/fish/git-gh-short-defs.inc".text = gitGhShort.defs;
     programs = {
