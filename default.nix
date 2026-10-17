@@ -30,6 +30,7 @@ in
     home.file.".config/fish/conf.d/42-vi-selection-reverse.fish".source =
       ./fish/42-vi-selection-reverse.fish;
     home.file.".config/fish/conf.d/43-cursor-blink.fish".source = ./fish/43-cursor-blink.fish;
+    home.file.".config/fish/conf.d/44-n-x.fish".source = ./fish/44-n-x.fish;
     home.file.".config/fish/conf.d/45-git-path-complete.fish".source = ./fish/git-path-complete.fish;
     home.file.".config/fish/conf.d/50-git-gh-short.fish".text = gitGhShort.loader;
     home.file.".config/fish/git-gh-short-defs.inc".text = gitGhShort.defs;
