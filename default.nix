@@ -14,7 +14,10 @@ in
   programs.fish.enable = true;
 
   users.users.root.shell = pkgs.fish;
-  users.users.${user}.shell = pkgs.fish;
+  users.users.${user} = {
+    isNormalUser = lib.mkDefault true;
+    shell = pkgs.fish;
+  };
 
   home-manager.users.${user} = {
     home.packages = with pkgs; [
