@@ -46,12 +46,11 @@ in
           la = "lsd -a";
           ll = "lsd -l";
           lla = "lsd -la";
+          lt = "lsd --total-size";
+          llt = "lsd -l --total-size";
           dir = "lsd";
           vdir = "lsd -l";
-        };
-        functions.lt = {
-          description = "Directory tree (lsd)";
-          body = "command lsd --tree $argv";
+          tree = "lsd --tree";
         };
         interactiveShellInit = ''
           fish_vi_key_bindings
