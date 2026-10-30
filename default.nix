@@ -46,8 +46,7 @@ in
           la = "lsd -a";
           ll = "lsd -l";
           lla = "lsd -la";
-          lt = "lsd --total-size";
-          llt = "lsd -l --total-size";
+          lt = "lsd -l --total-size";
           dir = "lsd";
           vdir = "lsd -l";
           tree = "lsd --tree";
