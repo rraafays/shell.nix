@@ -7,12 +7,22 @@ if not set -q TMUX
 end
 
 set -g fish_handle_reflow 0
-set -Ua fish_features no-query-term no-mark-prompt
+set -Ua fish_features no-query-term no-mark-prompt no-keyboard-protocols
 
-function __fish_tmux_sync_term_size --on-signal WINCH
-    set -e COLUMNS 2>/dev/null
-    set -e LINES 2>/dev/null
+function __fish_tmux_sync_tty_size
+    set -l dim (command stty size 2>/dev/null | string split ' ')
+    if test (count $dim) -eq 2
+        set -gx LINES $dim[1]
+        set -gx COLUMNS $dim[2]
+    end
 end
 
-set -e COLUMNS 2>/dev/null
-set -e LINES 2>/dev/null
+function __fish_tmux_sync_tty_size_winch --on-signal WINCH
+    __fish_tmux_sync_tty_size
+end
+
+function __fish_tmux_sync_tty_size_prompt --on-event fish_prompt
+    __fish_tmux_sync_tty_size
+end
+
+__fish_tmux_sync_tty_size
