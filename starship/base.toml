@@ -36,6 +36,9 @@ style = "bold fg:13"
 
 [git_status]
 style = "bold fg:9"
+ahead = '⇡ '
+diverged = '⇕ '
+behind = '⇣ '
 
 [git_state]
 style = "bold fg:11"
