@@ -34,7 +34,6 @@ in
       ./fish/42-vi-selection-reverse.fish;
     home.file.".config/fish/conf.d/43-cursor-blink.fish".source = ./fish/43-cursor-blink.fish;
     home.file.".config/fish/conf.d/44-n-x.fish".source = ./fish/44-n-x.fish;
-    home.file.".config/fish/conf.d/45-git-path-complete.fish".source = ./fish/git-path-complete.fish;
     home.file.".config/fish/conf.d/46-pty-term-size.fish".source = ./fish/46-pty-term-size.fish;
     home.file.".config/fish/conf.d/55-tmux-alt-keys.fish".source = ./fish/55-tmux-alt-keys.fish;
     home.file.".config/fish/conf.d/50-git-gh-short.fish".text = gitGhShort.loader;
